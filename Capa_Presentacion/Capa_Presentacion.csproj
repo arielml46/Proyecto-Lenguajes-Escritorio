@@ -41,18 +41,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ctrClientes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrClientes.Designer.cs">
+      <DependentUpon>ctrClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="ctrLogin.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ctrLogin.Designer.cs">
       <DependentUpon>ctrLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="ctrMotos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrMotos.Designer.cs">
+      <DependentUpon>ctrMotos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ctrClientes.resx">
+      <DependentUpon>ctrClientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ctrLogin.resx">
       <DependentUpon>ctrLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrMotos.resx">
+      <DependentUpon>ctrMotos.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Capa_Aplicacion
 {
-    public partial class Form1 : Form
+    public partial class frmMantenimientoMotos : Form
     {
-        public Form1()
+        public frmMantenimientoMotos()
         {
             InitializeComponent();
         }

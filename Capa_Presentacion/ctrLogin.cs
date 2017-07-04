@@ -16,5 +16,31 @@ namespace Capa_Presentacion
         {
             InitializeComponent();
         }
+
+        public string Usuario
+        {
+            get
+            {
+                return this.txtUsuario.Text.Trim();
+            }
+            set
+            {
+                this.txtUsuario.Text = value.Trim();
+            }
+        }
+
+        public string Password
+        {
+            get
+            {
+                return this.txtPassword.Text.Trim();
+            }
+
+            set
+            {
+                this.txtPassword.Text = value.Trim();
+            }
+        }
+
     }
 }
